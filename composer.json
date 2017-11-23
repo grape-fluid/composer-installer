@@ -19,6 +19,11 @@
       "Grapesc\\GrapeFluid\\Composer\\": "src"
     }
   },
+  "extra": {
+    "class": [
+      "Grapesc\\GrapeFluid\\Composer\\Installer"
+    ]
+  },
   "prefer-stable": true,
   "minimum-stability": "dev"
 }
