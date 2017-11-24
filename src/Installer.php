@@ -47,7 +47,7 @@ class Installer extends LibraryInstaller implements InstallerInterface
 	protected function getPackageName(PackageInterface $package)
 	{
 		$name       = "";
-		$prettyName = str_replace(["\\", "/"], "-", preg_replace("#^(grape-fluid)/#", "", $package->getPrettyName()));
+		$prettyName = str_replace(["\\", "/"], "-", preg_replace("#^(grape-fluid|fluid-cms)/#", "", $package->getPrettyName()));
 
 		foreach (preg_split("/-/", $prettyName) as $part) {
 			$name.= ucfirst(strtolower($part));
